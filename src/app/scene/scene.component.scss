@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    margin-top: 1em;
+  
+    .deck-container {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(auto, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 8px;
+      width: var(--scene-with);
+      height: var(--scene-height);
+      max-width: 80vw;
+      max-height: 75vh;
+      margin: 0 auto;
+    }
+  
+  
+    @media only screen and (max-width: 600px) {
+      .deck-container {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(auto, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 8px;
+        width: var(--scene-with);
+        height: var(--scene-height);
+        max-width: 85vw;
+        max-height: 75vh;
+        margin: 0 auto;
+      }
+    }
+  }

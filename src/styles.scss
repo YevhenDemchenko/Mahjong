@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --bg-color: #3e3e3e;
+    --fg-color: rgb(226 225 225);
+    --scene-with: 650px;
+    --scene-height: 550px;
+    --main-radius: .35rem;
+  }
+  
+  html {
+    height: 100%;
+    font-size: 100%;
+  }
+  
+  body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+  
+    font-size: 1em;
+    font-weight: normal;
+    font-family: "Oxanium", sans-serif;
+  }
+  
+  
+  button {
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--fg-color);
+    font: inherit;
+    background-color: #d7786d;
+    padding: 0.5em 1.25em;
+    opacity: .85;
+    transition: opacity linear .3s;
+    border-radius: var(--main-radius);
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  span {
+    display: inline-block;
+    font: inherit;
+  }
+  
+  .pointer {
+    cursor: pointer !important;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    :root {
+      --scene-with: 450px;
+      --scene-height: 400px;
+    }
+  
+    body {
+      font-size: .85em
+    }
+  }

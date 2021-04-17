@@ -1,0 +1,7 @@
+<div class="deck-container">
+    <app-card
+      *ngFor="let card of game.deck"
+      [item]="card"
+      (flip)="game.checkConditionOfPair($event)"
+    ></app-card>
+  </div>
